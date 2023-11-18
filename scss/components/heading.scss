@@ -1,0 +1,15 @@
+.heading {
+  grid-column: 4 / 7;
+  grid-row: 2 / 3;
+
+  @include response(md){
+    grid-column: 3 / -1;
+  }
+
+  &-text {
+    font-family: 'Great Vibes', cursive;
+    font-size: size(xl) * 2;
+    font-weight: lighter;
+    letter-spacing: 0.5rem;
+  }
+}
